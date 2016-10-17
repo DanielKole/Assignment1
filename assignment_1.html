@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <title></title>
+         <title>Assignment 1</title>
     </head>
     <style>
         
@@ -171,6 +171,7 @@
     <body>
         
         <div id = 'banner'>
+            <button id = 'bannerbutton'><h3>Hide this button</h3></button>
             <div id = 'banner_div'>
             </div>
             <div class = 'tagline' id = 'Tagline'>
@@ -215,5 +216,46 @@
             </div>
             
         </div>
+        
+        <script>
+            
+            var bbannerDiv = document.getElementById('b_banner');
+            var pic4_click = document.getElementById('pic4');
+            var bioDiv = document.getElementById('bio');
+            var bioBut = document.getElementById('p_bio');
+            var bbannerBut = document.getElementById('b_banner');
+            var imgava_click = document.getElementById('avatar');
+            var bannerBut = document.getElementById('bannerbutton');
+            var bannerDiv = document.getElementById('banner');
+            var pic1_click = document.getElementById('pic1');
+            var pic2_click = document.getElementById('pic2');
+            var pic3_click = document.getElementById('pic3');
+            
+            pic1_click.onclick = function(){
+                bannerDiv.innerHTML = '#AF3';
+            }
+            
+            pic2_click.onclick = function(){
+                bioBut.style.width = '800px';
+            }
+            
+            pic3_click.onclick = function(){
+                imgava_click.style.height = '1000px';
+            }
+            
+            pic4_click.onclick = function(){
+                bioDiv.innerHTML = '#999';
+                bioDiv.style.height = '2px';
+            }
+            
+            
+            bannerBut.onclick = function(){
+                bbannerDiv.innerHTML = 'Oops!';
+            }
+                
+                
+                
+            
+        </script>
     </body>
 </html>
